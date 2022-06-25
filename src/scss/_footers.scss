@@ -14,20 +14,21 @@
       }
     }
     .footer__iconos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .facebook {
         color: white;
-        width: 200px;
+        margin: 10px;
         font-size: 40px;
       }
       .instagram {
         color: white;
         font-size: 40px;
+        margin: 10px;
       }
     }
     .footer__button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       .button {
         margin: 18px;
         border: 1px solid #ffffff;
