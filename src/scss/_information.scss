@@ -1,0 +1,110 @@
+.form-register {
+  width: 100%;
+  padding: 30px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+
+  .controls {
+    width: 100%;
+    background: #0d0d0d;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0169fe;
+    font-family: "calibri";
+    font-size: 18px;
+    color: white;
+  }
+  .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  ::placeholder {
+    color: #2958e6;
+  }
+  textarea {
+    width: 100%;
+    height: 150px;
+    background: #0d0d0d;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0169fe;
+    font-family: "calibri";
+    font-size: 18px;
+    color: white;
+  }
+}
+
+.information {
+  .contact {
+    padding-bottom: 20px;
+    .contact__logo {
+      text-align: center;
+      .logo {
+        width: 150px;
+      }
+    }
+  }
+  .information__icons {
+    text-align: center;
+    color: white;
+    .email,
+    .whatsapp {
+      font-size: 40px;
+      padding: 10px;
+      color: #0169fe;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .information {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .form-register {
+      width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      .controls {
+        width: 300px;
+        margin: 10px;
+      }
+      textarea {
+        width: 620px;
+        margin: 10px;
+      }
+      .botons {
+        width: 40%;
+        margin: 0 180px;
+      }
+    }
+  }
+  .information {
+    .contact {
+      .contact__logo {
+        .logo {
+          width: 250px;
+        }
+      }
+    }
+    .information__icons {
+      text-align: center;
+      color: white;
+      .email,
+      .whatsapp {
+        font-size: 40px;
+        padding: 10px;
+        margin-top: 50px;
+        color: #0169fe;
+      }
+    }
+  }
+}

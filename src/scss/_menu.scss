@@ -1,0 +1,64 @@
+header {
+  .container__header {
+    //max-width: 1200px;
+    //margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    .header__logo {
+      text-align: center;
+      padding: 10px 0;
+      .logo {
+        width: 150px;
+      }
+    }
+    .container__iconos {
+      .facebook {
+        color: #0169fe;
+        margin: 10px;
+        font-size: 40px;
+      }
+      .instagram {
+        color: #0169fe;
+        font-size: 40px;
+        margin: 10px;
+      }
+    }
+    .container__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .buttons {
+        width: 300px;
+        border: 1px solid #0169fe;
+        color: #0169fe;
+        font-size: 20px;
+        h3 {
+          font-size: 18px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 612px) {
+  .container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .container__iconos {
+      .facebook {
+        color: #0169fe;
+
+        font-size: 40px;
+      }
+      .instagram {
+        color: #0169fe;
+
+        font-size: 40px;
+      }
+    }
+  }
+}

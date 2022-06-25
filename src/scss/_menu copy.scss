@@ -1,0 +1,40 @@
+header {
+  background: #0169fe;
+  .container__header {
+    //max-width: 1200px;
+    //margin: 0 auto;
+    padding-bottom: 20px;
+
+    .header__logo {
+      text-align: center;
+      padding: 10px 0;
+      .logo {
+        width: 150px;
+      }
+    }
+    .container__iconos {
+      .facebook {
+        color: #0169fe;
+        width: 200px;
+        font-size: 40px;
+      }
+      .instagram {
+        color: #0169fe;
+        font-size: 40px;
+      }
+    }
+    .container__button {
+      text-align: center;
+      .button {
+        margin: 18px;
+        border: 1px solid #0169fe;
+        color: #0169fe;
+        font-size: 20px;
+        h3 {
+          font-size: 18px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
