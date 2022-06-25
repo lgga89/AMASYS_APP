@@ -8,22 +8,51 @@
     justify-content: space-around;
     flex-wrap: wrap;
     z-index: 1;
+
+    .box {
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      margin: 1.5%;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      .hover {
+        width: 0%;
+        height: 50vh;
+        background-color: rgba(23, 48, 241, 0.622);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.4s all;
+      }
+      h1 {
+        position: absolute;
+
+        top: 35%;
+
+        color: white;
+      }
+    }
+
+    .box:hover .hover {
+      width: 100%;
+    }
+    //-------------------------------------------------------------//
+
     .photo__gallery {
-      width: 100%; // 400 responsive
-      height: 200px;
       position: relative;
       margin-bottom: 35px;
       border-radius: 5px;
       box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
       transition: 0.6s ease;
-      .contenedor-modal {
-        p {
-          position: absolute;
-          bottom: 5%;
-          left: 5%;
-          color: white;
-        }
-      }
     }
   }
 }
@@ -32,74 +61,19 @@
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
-.photo__gallery {
-  img {
-    width: 100%; // para jugar con el tamaño en el r4sponsive
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    transition: 0.55s ease;
-    overflow: hidden;
-  }
-}
-
-.photo__gallery:hover .overlay {
-  height: 100%;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
 /*---------------------*/
-
-.contenedor-modal.active {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-.contenedor-modal.active img {
-  z-index: 3;
-  width: 700px;
-  height: 700px;
-}
-
-.contenedor-modal.active::after {
-  position: fixed;
-  content: "";
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(211, 211, 211, 0.459);
-}
-
-.contenedor-modal.active {
-  background-color: rgba(211, 211, 211, 0.459);
-}
 
 @media (min-width: 500px) {
   .photo__gallery {
     img {
-      width: 450px; // para jugar con el tamaño en el r4sponsive
+      width: 450px;
       height: 300px;
     }
   }
   .gallery {
     .gallery__container {
       .photo__gallery {
-        width: 450px; // 400 responsive
+        width: 450px;
         height: 300px;
       }
     }

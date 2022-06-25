@@ -9,51 +9,55 @@ export function Gallery() {
     <section id="Galeria" className="gallery">
       <div className="gallery__container">
         <div className="photo__gallery">
-          <div className="contenedor-modal">
+          <div className="box">
             <img src={web} alt="web" />
-            <p>DISEÑO WEB</p>
-            <div className="overlay"></div>
+            <div className="hover">
+              <h1>DISEÑO WEB</h1>
+            </div>
           </div>
         </div>
+
         <div className="photo__gallery">
-          <div className="contenedor-modal">
+          <div className="box">
             <img src={fac} alt="FAC" />
-            <p>SISTEMAS</p>
-            <div className="overlay"></div>
+            <div className="hover">
+              <h1>SISTEMAS</h1>
+            </div>
           </div>
         </div>
         <div className="photo__gallery">
-          <div className="contenedor-modal">
+          <div className="box">
             <img src={fac} alt="" />
-            <p>SISTEMAS DE FACTURACION Y STOCK</p>
-            <div className="overlay"></div>
+            <div className="hover">
+              <h1>SISTEMAS DE FACTURACION Y STOCK</h1>
+            </div>
           </div>
         </div>
         <div className="photo__gallery">
-          <div className="contenedor-modal">
+          <div className="box">
             <img src={cursos} alt="" />
-            <p>SISTEMAS CURSOS</p>
-            <div className="overlay"></div>
+            <div className="hover">
+              <h1>SISTEMAS CURSOS</h1>
+            </div>
           </div>
         </div>
         <div className="photo__gallery">
-          <div className="contenedor-modal">
-            <img src={reservas} alt="" />
-            <p>SISTEMAS DE RESERVA</p>
-            <div className="overlay"></div>
+          <div className="box">
+            <img src={reservas} alt="" />{" "}
+            <div className="hover">
+              <h1>SISTEMAS DE RESERVA</h1>
+            </div>
           </div>
         </div>
         <div className="photo__gallery">
-          <div className="contenedor-modal">
+          <div className="box">
             <img src={pasajes} alt="" />
-            <p>SISTEMAS DE PASAJES</p>
-            <div className="overlay"></div>
+            <div className="hover">
+              <h1>SISTEMAS DE PASAJES</h1>
+            </div>
           </div>
         </div>
       </div>
-      <script src="../js/gallery.js"></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="../js/main.js"></script>
     </section>
   );
 }
